@@ -62,3 +62,9 @@
   box-shadow: 0 0 5px #222;
   overflow: hidden;
 }
+
+.images img:last-child {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
