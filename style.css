@@ -69,6 +69,7 @@
   cursor: pointer;
   box-shadow: 0 0 5px #222;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .images {
@@ -83,4 +84,19 @@
   position: absolute;
   left: 0;
   z-index: -1;
+}
+
+.boxs {
+  display: flex;
+  gap: 10px;
+}
+
+.top {
+  width: 100%;
+  background: #0065fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-weight: bold;
 }
