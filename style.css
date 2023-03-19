@@ -54,6 +54,9 @@
 }
 
 .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
 }
 
@@ -105,5 +108,23 @@
 .top i {
   color: #0f0;
   font-size: 20px;
+  text-shadow: 0 0 10px #0f0;
+}
+
+.desc {
+  padding: 10px;
+}
+
+.desc p {
+  display: inline;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-left: 8px;
+  color: #fff;
+  text-shadow: none;
+}
+
+.desc li {
+  list-style: "\2714";
+  color: #0f0;
   text-shadow: 0 0 10px #0f0;
 }
