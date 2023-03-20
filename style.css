@@ -4,6 +4,10 @@
   font-family: sans-serif;
 }
 
+body {
+  padding-bottom: 60px;
+}
+
 .navbar {
   position: fixed;
   z-index: 10;
@@ -110,7 +114,8 @@
 }
 
 .boxs {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 }
 
@@ -179,6 +184,10 @@
   box-shadow: 0 -2px 5px #888;
 }
 
+.bottom-bar {
+  display: none;
+}
+
 .bottom i {
   color: #5e17eb;
   font-size: 25px;
@@ -188,4 +197,38 @@
 
 .bottom i:hover {
   text-shadow: 0 0 10px #5e17eb;
+}
+
+@media (max-width: 1000px) {
+  .bottom-bar {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+}
+
+.on-off {
+  position: fixed;
+  top: 60px;
+  padding: 5px;
+  background: #2e0188;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .boxs {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .boxs {
+    grid-template-columns: 1fr;
+  }
 }
