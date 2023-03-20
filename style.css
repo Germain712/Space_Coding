@@ -219,6 +219,15 @@ body {
   padding: 5px;
   background: #2e0188;
   color: #fff;
+  border-radius: 50%;
+  left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #2e0188;
+}
+
+.fa-brightness {
+  display: none;
 }
 
 @media (max-width: 600px) {
