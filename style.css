@@ -6,6 +6,20 @@
 
 body {
   padding-bottom: 60px;
+  background: #fff;
+  transition: 0.7s ease;
+}
+
+body.change {
+  background: #222;
+}
+
+.uil-brightness.cday {
+  display: block;
+}
+
+.uil-moon.cdark {
+  display: none;
 }
 
 .navbar {
@@ -182,6 +196,10 @@ body {
   background: #fff;
   border-top: 1px solid #999;
   box-shadow: 0 -2px 5px #888;
+}
+
+.bottom.dark {
+  background: #222;
 }
 
 .bottom-bar {
